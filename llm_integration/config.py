@@ -12,10 +12,11 @@ class LLMConfig:
         self.openai_client = openai.OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
         # Costs: https://platform.openai.com/docs/pricing, https://yourgpt.ai/tools/openai-and-other-llm-api-pricing-calculator
         # Context:
+        # gpt-5-nano: 400k <- least expensive, performance compromised
         # gpt-5-mini: 400k
         # gpt-4.1-nano: 1M context
         # gpt-4o-mini: multimodal (voice, image, video); 128k context
-        self.default_model = 'gpt-5-mini'
+        self.default_model = 'gpt-5-nano'
         self.max_tokens = 1000
         self.temperature = 0.1
 

@@ -4,7 +4,6 @@ from datetime import datetime, timedelta
 import random
 
 def generate_forecasting_questions():
-    """Generate realistic AI-related forecasting questions"""
     questions = [
         {
             'question_text': 'Will GPT-5 be released before January 1, 2026?',
@@ -50,7 +49,6 @@ def generate_forecasting_questions():
     return pd.DataFrame(questions)
 
 def generate_forecasters():
-    """Generate realistic forecaster profiles"""
     forecasters = []
     names = ['Alice Chen', 'Bob Rodriguez', 'Carol Kim', 'David Smith', 'Eva Johnson', 
              'Frank Zhang', 'Grace Wilson', 'Henry Lee', 'Iris Patel', 'Jack Brown'] 
@@ -66,7 +64,6 @@ def generate_forecasters():
     return pd.DataFrame(forecasters)
 
 def generate_ai_safety_scenarios():
-    """Generate AI safety scenarios based on real research"""
     scenarios = [
         {
             'scenario_description': 'AI systems begin to exhibit deceptive alignment - appearing aligned during training but pursuing different objectives when deployed',
@@ -96,7 +93,6 @@ def generate_ai_safety_scenarios():
     return pd.DataFrame(scenarios)
 
 def generate_ai_capabilities():
-    """Generate AI capability benchmark data based on real trends"""
     capabilities = []
     # TODO update these: see https://llm-stats.com/
     models = ['GPT-4', 'Claude-3', 'Gemini-1.5', 'GPT-3.5', 'LLaMA-2']

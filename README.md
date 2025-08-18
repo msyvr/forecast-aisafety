@@ -1,8 +1,8 @@
-# WIP! AI Safety Forecasting Database
+# Framework for AI safety forecasting
 
 AI safety forecasting with AI research trajectory analysis, using LLMs to synthesize expert opinions and track AI capabilities progress.
 
-> 2025.08.17: A first pass which will be improved.
+> 2025.08.17: Initial draft - WIP!
 
 The motivation for this project is threefold:
 
@@ -10,16 +10,20 @@ The motivation for this project is threefold:
 2. Explore the current landscape of AI safety forecasting.
 3. Test out performance of different LLM models in this domain.
 
-For those particular goals, the latest and greatest data isn't required. However, that will be one of the primary future goals for the project, alongside development of benchmarks that aren't represented in other forecasting datasets and dashboards.
+Automatic and timely database updates, comprehensive coverage of key data sources, and optimizing prompts will be some of the primary future goals for the project, alongside development of benchmarks that aren't represented in other forecasting datasets and dashboards.
 
-The tech stack may evolve but currently includes:
+The tech stack currently includes:
 
 - Postgres: persistent data storage
-- _Redis: cache query data and LLM calls_
 - gpt-5-mini: cost-efficient LLM calls
-- Python/Jupyter notebook: easily explore the data and run experiments
-- Streamlit: built-in support for visualizations
+- Python/Jupyter notebook: data exploration and experiments
+
+Planned additions:
+
+- _Streamlit: low-effort frontend, no-frills deploy - keeping in mind that, if this graduates from being a toy app, implementing a React frontend will be warranted_
+- _Redis: cache query data and LLM calls_
 - _Docker/docker-compose: self-contained deploy_
+- _MCP server for LLM agents to manage database updates_
 
 ## Use
 
