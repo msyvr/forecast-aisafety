@@ -14,19 +14,20 @@ The motivation for this project is threefold:
 
 Automatic and timely database updates, comprehensive coverage of key data sources, and optimizing prompts will be some of the primary future goals for the project, alongside development of benchmarks that aren't represented in other forecasting datasets and dashboards.
 
-The tech stack currently includes:
+## Tech stack
 
-- Postgres: persistent data storage
-- gpt-5-mini: cost-efficient LLM calls
-- Python/Jupyter notebook: data exploration and experiments
+- PostgreSQL: persistent storage
+- Redis: cache query data
+- Streamlit: low-effort frontend/viz, no-frills deploy
+  - if this grows beyond being a toy app, move to a more performant frontend
+- Docker: self-contained deploy
+- Airflow: data scheduler
+- MCP/CrewAI: orchestrate LLM agents (separate from target data source API polling)
 
-TODO:
+  - analyze websites and newsletters for relevant new/updated datasets
+  - analyze expert chatter and evaluate the system (LLM as judge of the forecasting system)
 
-- dbt for data transformation management/versioning
-- Streamlit: low-effort frontend, no-frills deploy - keeping in mind that, if this graduates from being a toy app, implementing a React frontend will be warranted
-- Redis: cache query data and LLM calls
-- Docker/docker-compose: self-contained deploy
-- MCP server for LLM agents to manage database updates
+- _dbt: data transformation management/versioning (possibly overkill)_
 
 ## Use
 
