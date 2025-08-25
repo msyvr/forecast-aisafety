@@ -1,6 +1,5 @@
 from config.database import get_db_session
 from database.models import ForecastingQuestion
-from config.database import create_tables
 from data_collection.data_loader import load_all_seed_data
 
 def setup_database():

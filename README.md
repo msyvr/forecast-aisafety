@@ -1,12 +1,14 @@
 # Framework for AI safety forecasting
 
+--- _Initial skeleton set up in collaboration with Claude._ ---
+
 AI safety forecasting with trajectory analysis, using LLMs to synthesize expert opinions and track AI capabilities progress.
 
 > 2025.08.17: Initial draft - WIP!
 
 The motivation for this project is threefold:
 
-1. Get a feel for forecasting.
+1. Explore forecasting.
 2. Explore the current landscape of AI safety forecasting.
 3. Test out performance of different LLM models in this domain.
 
@@ -18,16 +20,19 @@ The tech stack currently includes:
 - gpt-5-mini: cost-efficient LLM calls
 - Python/Jupyter notebook: data exploration and experiments
 
-Planned additions:
+TODO:
 
-- _Streamlit: low-effort frontend, no-frills deploy - keeping in mind that, if this graduates from being a toy app, implementing a React frontend will be warranted_
-- _Redis: cache query data and LLM calls_
-- _Docker/docker-compose: self-contained deploy_
-- _MCP server for LLM agents to manage database updates_
+- dbt for data transformation management/versioning
+- Streamlit: low-effort frontend, no-frills deploy - keeping in mind that, if this graduates from being a toy app, implementing a React frontend will be warranted
+- Redis: cache query data and LLM calls
+- Docker/docker-compose: self-contained deploy
+- MCP server for LLM agents to manage database updates
 
 ## Use
 
 ```bash
+git clone git@github.com:msyvr/forecast-aisafety
+cd forecast-aisafety
 # Setup environment
 cp .env.example .env
 # Edit .env with your configuration
