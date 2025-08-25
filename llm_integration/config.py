@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 
 import os
 import openai
-from typing import Dict, Any, List
+from typing import Dict
 import json
 
 load_dotenv()

@@ -1,7 +1,7 @@
 from llm_integration.config import llm_config
 from database.models import AISafetyScenario, ExpertPrediction, Forecaster
 from config.database import get_db_session
-from typing import Dict, List
+from typing import Dict
 import json
 
 class SafetyAnalyzer:

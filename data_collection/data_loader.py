@@ -1,7 +1,6 @@
 from config.database import get_db_session, create_tables
 from database.models import *
 from data_collection.collectors.synthetic_data import *
-import pandas as pd
 
 def load_all_seed_data():
     """Load all seed data into databases"""

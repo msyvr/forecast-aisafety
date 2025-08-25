@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from datetime import datetime, timedelta
 import random
 
@@ -95,7 +94,7 @@ def generate_ai_safety_scenarios():
 def generate_ai_capabilities():
     capabilities = []
     # TODO update these: see https://llm-stats.com/
-    models = ['GPT-4', 'Claude-3', 'Gemini-1.5', 'GPT-3.5', 'LLaMA-2']
+    models = ['gpt-5-nano', 'claude-3-haiku-20240307', 'gemini-2.0-flash-lite', 'LLAMA']
     # TODO update these: see https://llm-stats.com/
     benchmarks = ['MMLU', 'HumanEval', 'HellaSwag', 'ARC', 'GSM8K']
     
