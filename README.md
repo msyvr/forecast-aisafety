@@ -1,6 +1,6 @@
 # Framework for AI safety forecasting
 
-AI safety forecasting with AI research trajectory analysis, using LLMs to synthesize expert opinions and track AI capabilities progress.
+AI safety forecasting with trajectory analysis, using LLMs to synthesize expert opinions and track AI capabilities progress.
 
 > 2025.08.17: Initial draft - WIP!
 
@@ -38,3 +38,10 @@ python run_app.py
 # Explore data
 jupyter notebook notebooks/data_exploration.ipynb
 ```
+
+## Tech stack
+
+- [fireducks](https://fireducks-dev.github.io/): drop-in replacement for pandas with identical api (literally, just import fireducks as pd, no other changes)
+  - [performance vs polars, duckdb, pandas](https://blog.dailydoseofds.com/p/fireducks-vs-pandas-vs-duckdb-vs)
+- better known but, coming from pandas, the api takes getting used to - [polars](https://docs.pola.rs/user-guide/misc/comparison/): multithreaded on a single node (for distributed processing, use Apache Spark); pandas is single-threaded
+- [ibis](https://ibis-project.org/tutorials/basics): [notes from a fan](https://www.reddit.com/r/Python/comments/16gciot/underused_library_ibis_dataframe_frontend_sql/)

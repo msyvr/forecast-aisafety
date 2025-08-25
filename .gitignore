@@ -12,5 +12,5 @@ wheels/
 # Custom env vars (!use Vault or similar in prod)
 .env
 
-
+.DS_Store
 temp/*
